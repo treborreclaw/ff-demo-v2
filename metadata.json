@@ -1,0 +1,6 @@
+{
+  "name": "Fair Finance Section Redesign",
+  "description": "New website sections for Bad Credit and Benefits loans, inspired by Fair Finance brand.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

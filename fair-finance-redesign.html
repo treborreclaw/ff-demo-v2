@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fair Finance Redesign - Standalone</title>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        @font-face {
+            font-family: 'Campfire';
+            font-style: normal;
+            font-weight: normal;
+            font-display: swap;
+            src: url('https://fairfinance.org.uk/wp-content/uploads/2025/01/Campfire.ttf') format('truetype');
+        }
+
+        :root {
+            --ff-teal: #313129;
+            --ff-blue: #30E0FF;
+            --ff-green: #5DFF3C;
+            --ff-bg-beige: #F7F8F2;
+            --ff-footer: #D8D8D8;
+        }
+
+        * { box-sizing: border-box; }
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            color: var(--ff-teal);
+            line-height: 1.5;
+        }
+
+        .container {
+            max-width: 1240px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        h2 {
+            font-family: 'Campfire', serif;
+            font-size: 47px;
+            margin: 0 0 20px 0;
+            line-height: 1.1;
+            font-weight: normal;
+        }
+
+        p { font-size: 18px; margin-bottom: 20px; }
+        
+        .section-padding { padding: 80px 0; }
+        .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; }
+
+        /* Buttons */
+        .btn-blue {
+            display: inline-flex;
+            font-family: 'Campfire', serif;
+            font-size: 20px;
+            background: var(--ff-blue);
+            color: var(--ff-teal);
+            padding: 12px 40px;
+            text-decoration: none;
+            transition: opacity 0.2s;
+        }
+        .btn-blue:hover { opacity: 0.9; }
+
+        /* 2x2 Feature Table */
+        .feature-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+            background: white;
+            padding: 16px;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.06);
+            border: 1px solid rgba(49, 49, 41, 0.05);
+        }
+
+        .feature-card {
+            padding: 24px;
+            min-height: 220px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .card-blue { background: #E0F3FF; color: #0E6093; }
+        .card-orange { background: #FFF4E5; color: #C26F00; }
+        .card-purple { background: #F3E5F5; color: #7B1FA2; }
+        .card-green { background: #E8F5E9; color: #2E7D32; }
+
+        .feature-card .val { font-size: 42px; font-weight: 700; line-height: 1; }
+        .feature-card .label { font-size: 16px; font-weight: 700; line-height: 1.2; }
+
+        /* Bad Credit Visual Box */
+        .ff-box {
+            border: 3px solid var(--ff-teal);
+            background: white;
+            padding: 40px;
+            box-shadow: 6px 6px 0px var(--ff-teal);
+        }
+
+        .check-list { list-style: none; padding: 0; font-weight: 600; margin: 0; }
+        .check-list li { display: flex; align-items: center; gap: 12px; margin-bottom: 12px; }
+        .check-list li::before { content: '✓'; color: var(--ff-blue); font-weight: 900; font-size: 20px; }
+
+        @media (max-width: 768px) {
+            .grid { grid-template-columns: 1fr; gap: 40px; }
+            h2 { font-size: 34px; }
+            .feature-card { min-height: 180px; }
+            .btn-blue { width: 100%; text-align: center; justify-content: center; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Loans for Bad Credit -->
+    <section class="section-padding" style="background: var(--ff-bg-beige);">
+        <div class="container grid">
+            <div>
+                <h2>Loans for Bad Credit</h2>
+                <div style="max-width: 500px;">
+                    <p>Finding loans for bad credit can be challenging, especially if you have a low credit score or a history of missed payments, and it can feel difficult to access affordable borrowing.</p>
+                    <p>At Fair Finance, we look beyond your credit score and focus on what you can realistically afford to repay. We offer loans for bad credit from <strong>£400 to £1000</strong> with clear terms and no hidden fees.</p>
+                </div>
+                <a href="#" class="btn-blue">Learn more about our loan for bad credit</a>
+            </div>
+            <div class="ff-box">
+                <div style="display: flex; align-items: center; gap: 15px; border-bottom: 1px solid rgba(0,0,0,0.1); padding-bottom: 20px; margin-bottom: 30px;">
+                    <div style="width: 50px; height: 50px; background: var(--ff-blue); display: flex; align-items: center; justify-content: center; font-family: 'Campfire'; font-weight: bold; font-size: 24px;">FF</div>
+                    <span style="font-weight: 700; font-size: 20px;">Direct Lender</span>
+                </div>
+                <ul class="check-list">
+                    <li>No hidden fees, ever</li>
+                    <li>Loans from £400 to £1000</li>
+                    <li>Fast 24h decisions</li>
+                    <li>Flexible repayment dates</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Loans for People on Benefits -->
+    <section class="section-padding">
+        <div class="container grid">
+            <div style="order: 2;">
+                <h2>Loans for People on Benefits</h2>
+                <div style="max-width: 500px;">
+                    <p>Finding a loan if you receive benefits can be difficult, as many lenders have strict criteria around income and employment. At Fair Finance, we take a different approach.</p>
+                    <p>We consider your full financial circumstances, including any benefits you receive. Our loans are designed to be fair and affordable, with transparent pricing and repayments.</p>
+                </div>
+                <a href="#" class="btn-blue">Learn more about loans for people on benefits</a>
+            </div>
+            <div class="ff-box" style="order: 1;">
+                <div style="display: flex; align-items: center; gap: 15px; border-bottom: 1px solid rgba(0,0,0,0.1); padding-bottom: 20px; margin-bottom: 30px;">
+                    <div style="width: 50px; height: 50px; background: var(--ff-blue); display: flex; align-items: center; justify-content: center; font-family: 'Campfire'; font-weight: bold; font-size: 24px;">FF</div>
+                    <span style="font-weight: 700; font-size: 20px;">Benefits Accepted</span>
+                </div>
+                <ul class="check-list">
+                    <li>Benefit income accepted</li>
+                    <li>Regulated by FCA</li>
+                    <li>£400 minimum loan amount</li>
+                    <li>Fast 24h decisions</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
